@@ -1,0 +1,15 @@
+<div class="d-flex block">
+    <div class="block_elem"  *ngFor = "let item of author">
+        <div class="img_div">
+            <img src="{{item.img}}" routerLink="/author" alt="photo">
+        </div>
+        <h4>{{item.name}}</h4>
+        <p>{{item.descriptions}}</p>
+        <div class="soc_pages">
+            <a *ngFor = "let elem of socials" href="{{elem.link}}" target="_blank">
+                <img src="{{elem.img}}" alt="{{elem.name}}">
+            </a>   
+        </div>
+    </div>
+</div>
+

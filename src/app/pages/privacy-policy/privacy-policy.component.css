@@ -1,0 +1,147 @@
+.header_bg{
+    background-color: #F4F0F8;
+}
+h1{
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #232536;
+}
+.header_block p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+    margin: 16px 0 32px
+}
+.header_block h5{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    color: #232536
+}
+.header_block {
+    padding: 80px;
+    width: 50%;
+    margin: auto;
+}
+/* main style */
+.main_block h2{
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #232536;
+    margin-bottom: 32px;
+}
+.main_block h4{
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #232536;
+    margin-bottom: 24px;
+}
+.main_block p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #4C4C4C;
+}
+.main_block{
+    width: 60%;
+    margin: auto;
+    padding: 128px 0;
+}
+.main_text1{
+    margin-bottom: 32px;
+}
+.mg_bottom{
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1150px){
+    .header_block{
+        width: 80%;
+    }
+    .main_block{
+        padding: 90px 0;
+    }
+}
+@media screen and (max-width: 890px){
+    .header_block, .main_block{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .header_block{
+        padding: 45px;
+    }
+    .main_block h2{
+        font-size: 34px;
+        line-height: 18px;
+    }
+    .main_block h4{
+        font-size: 26px;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width: 640px){
+    h1{
+        font-size: 34px;
+    }
+    .header_block p{
+        font-size: 14px;
+        margin: 0;
+    }
+    .header_block{
+        padding: 25px 0;
+    }
+    .main_block{
+        padding: 60px 0;
+    }
+    .main_block h2{
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+    .main_block p{
+        font-size: 14px;
+    }
+    .main_block h4{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+}
+@media screen and (max-width: 440px){
+    h1{
+        font-size: 28px;
+    }
+    .main_block{
+        padding: 40px 0;
+    }
+    .main_block h2{
+        font-size: 22px;
+        line-height: 1;
+        margin-bottom: 16px;
+    }
+    .main_block p{
+        font-size: 13px;
+    }
+    .main_block h4{
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0;
+        margin-bottom: 12px;
+    }
+}

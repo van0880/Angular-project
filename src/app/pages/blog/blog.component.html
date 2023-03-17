@@ -1,0 +1,31 @@
+<header>
+    <app-navbar></app-navbar>
+    <div class="bg-color">
+        <div class="container">
+            <app-main-post [post]="feauterPost"></app-main-post>
+        </div>
+    </div>
+    
+</header>
+<main>
+    <div class="container">
+        <div class="main_block1">
+            <h3 class="title_h3">All Posts</h3>
+            <div class="all_posts">
+                <app-all-posts-blog [block] = "allPosts"></app-all-posts-blog>
+                <div class="center"> 
+                    <button (click)="prevPage()">&larr; Prev</button>
+                    <button (click)="nextPage()">Next  &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="block_category">
+            <h3 class="title_h3">All Categories</h3>
+            <app-home-categories [element] = "categoryBlock" ></app-home-categories>
+        </div>
+        <app-join-block></app-join-block>
+    </div>
+</main>
+<footer>
+    <app-footer></app-footer>
+</footer>

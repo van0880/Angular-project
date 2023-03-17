@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(./assets/fonts/stylesheet.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+p,h2,h1,h3,h4,h5{
+    cursor: default;
+}
+
+button, a{
+    border: none;
+    cursor: pointer;
+}
+a img{
+    cursor: pointer;
+}
+.container{
+    width: 1280px;
+    margin: auto;
+}
+.center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.title_h3{
+    text-align: center;
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 48px;
+}
+.but_ReadMore{
+    background-color: #FFD050;
+    padding: 16px 48px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Sen;
+    color: #232536
+}
+.but_ReadMore:hover{
+    transform: scale(1.1);
+}
+.d-block{
+    display: block;
+}
+.in-block{
+    display: inline-block;
+}
+ @media screen and (max-width: 1320px){
+    .container{
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .container{
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .container{
+        width: 600px;
+    }
+    .but_ReadMore{
+        padding: 10px 36px;
+        font-size: 14px;
+    }
+    .title_h3{
+        font-size: 30px;
+        letter-spacing: 0;
+    }
+}
+@media screen and (max-width: 640px){
+    .container{
+        width: 400px;
+    }
+    .title_h3{
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+}
+@media screen and (max-width: 440px){
+    .container{
+        width: 335px;
+    }
+    .but_ReadMore {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 360px){
+    .container{
+        width: 280px;
+    }
+    .but_ReadMore {
+        padding: 5px 14px;
+        font-size: 10px;
+    }
+    .title_h3{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,33 @@
+<main class="flex">
+    <div class="menu">     
+        <div class="header_logo">
+            <a routerLink="/admin">
+                <img src="assets/images/home_img/Logo.png" alt="">
+            </a>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a routerLink="authors" routerLinkActive="active"><mat-icon>supervisor_account</mat-icon>  Authors</a></li>
+                <li><a routerLink="categories" routerLinkActive="active"><mat-icon>poll</mat-icon>   Categories</a></li>
+                <li><a routerLink="posts" routerLinkActive="active"><mat-icon>event_note</mat-icon>   Posts</a></li>
+            </ul>
+        </div>
+        <a (click)="display = !display" mat-raised-button>
+            Log out <mat-icon>exit_to_app</mat-icon>
+        </a>
+    </div> 
+    <div class="table_router">
+        <router-outlet></router-outlet>
+    </div>
+</main>
+
+
+<div class="block" *ngIf="display">
+    <div class="logout_block">
+        <p >Are you sure that you want to sign out?</p>
+        <div class="d-flex">
+            <button  mat-raised-button class="logout_yes" (click)="logout()">Yes</button>
+            <button mat-raised-button class="logout_no"  (click)="display = !display">No</button>
+        </div>
+    </div>
+</div>

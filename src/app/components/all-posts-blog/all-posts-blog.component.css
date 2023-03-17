@@ -1,0 +1,133 @@
+.posts_text h5{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    color: #592EA9;
+    margin-bottom: 20px;
+}
+.posts_img img{
+    width: 490px;
+    height: 318px;
+    object-fit: cover;
+    display: block;
+}
+.posts_text h2{
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #232536;
+    margin-bottom: 16px;
+}
+.posts_text p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+}
+.block{
+    display: flex;
+    margin-bottom: 64px;
+    transition-duration: 0.7s;
+
+}
+.posts_text {
+    padding: 60px 120px 0px 32px;
+}
+.block:hover{
+    background-color: #23253629;
+    transition-duration: 0.7s;
+}
+h5, h2, p{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px){
+    .posts_text{
+        padding: 0 0 0 25px;
+    }
+    .posts_text h2{
+        font-size: 33px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 890px){
+    .block{
+        flex-wrap: wrap;
+        border-bottom: 2px solid #00000066;
+    }
+    .posts_text{
+        padding: 0;
+        width: 100%;
+    }
+    .posts_text p{
+        line-height: 22px;
+    }
+    .posts_text h2{
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 8px;
+        letter-spacing: 0;
+    }
+    
+    
+}
+@media screen and (max-width: 640px){
+    .posts_img img{
+        width: 300px;
+        height: 180px;
+    }
+    .posts_text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .posts_text h5 {
+        font-size: 14px;
+    }
+    .posts_text h2 {
+        font-size: 18px;
+    }
+    .block {
+        margin-bottom: 40px;
+    }
+    .posts_text h5 {
+        margin-bottom: 5px;
+    }
+    
+}
+@media screen and (max-width: 440px){
+    .posts_text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .posts_text h5 {
+        font-size: 12px;
+    }
+    .posts_text h2 {
+        font-size: 20px;
+    }
+    .block:last-child{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 360px){
+    .block {
+        margin-bottom: 25px;
+    }
+    .posts_img img{
+        width: 200px;
+        height: 140px;
+    }
+    .posts_text h2{
+        font-size: 17px;
+        line-height: 19px;
+    }
+    .posts_text p{
+        line-height: 15px;
+    }
+    
+}

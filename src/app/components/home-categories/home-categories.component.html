@@ -1,0 +1,9 @@
+<div class="d-flex block">
+    <div class="block_elem" routerLink="/category" *ngFor = "let item of data">
+        <div class="img_div">
+            <img src={{item.img}} alt="photo">
+        </div>
+        <h4>{{item.title}}</h4>
+        <p>{{item.text}}</p>
+    </div>
+</div>

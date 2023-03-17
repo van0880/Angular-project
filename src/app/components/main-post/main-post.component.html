@@ -1,0 +1,12 @@
+<div class="d-flex header_block" *ngFor="let item of post">
+    <div class="header_title">
+        <h5>{{item.category}}</h5>
+        <h3>{{item.title}}</h3>
+        <span>By <a href="">{{item.name}} </a> {{item.date}}</span>
+        <p>{{item.text}}</p>
+        <button type="button" routerLink="/blogPost" class="but_ReadMore">Read More></button>
+    </div>
+    <div class="header_image">
+        <img src={{item.img}} alt="img">
+    </div>
+</div> 

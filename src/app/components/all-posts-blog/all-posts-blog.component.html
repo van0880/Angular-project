@@ -1,0 +1,10 @@
+<a *ngFor = "let item of block" class="block" [routerLink]="['/blog-post', item.id]">
+    <div class="posts_img" >
+        <img src={{item.img}} alt="image">
+    </div>
+    <div class="posts_text">
+        <h5>{{item.category}}</h5>
+        <h2>{{item.title}}</h2>
+        <p>{{item.text}}</p>
+    </div>
+</a>

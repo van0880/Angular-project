@@ -1,0 +1,7 @@
+<div class="elem_1" *ngFor="let item of data">
+    <img src={{item.img}} alt="foto">
+    <p class="main_byName">By <a href="">{{item.name}}</a>  {{item.date}}</p>
+    <h3>{{item.title}}</h3>
+    <p>{{item.text}}</p>
+    <a class="but_ReadMore in-block" [routerLink]="['/blog-post', item.id]" >Read More </a>
+</div>

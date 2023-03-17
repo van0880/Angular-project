@@ -1,0 +1,28 @@
+h2{
+    font-size: 20px;
+}
+header{
+    height:10%
+}
+main{
+    background-color: #232536;
+    padding: 60px 0;
+    height: 90vh;
+}
+.error-block{
+    text-align: center;
+    width: 77%;
+    margin: auto;
+    background-color: #6b6d7c;
+    border-radius: 34px;
+    padding: 50px 0;
+}
+.error-block img{
+    width: 25%;
+    margin-bottom: 40px;
+}
+.error-block h2{
+    color: #c0a675;
+    letter-spacing: 4px;
+    font-size: 50px;
+}

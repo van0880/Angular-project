@@ -1,0 +1,65 @@
+
+.table_block{
+    height: 100vh;
+}
+.mat-elevation-z8{
+    height: 90%;
+    padding-top: 10px;
+    background-color: #191f543d;
+}
+h1{
+    color: #232536ab;
+    letter-spacing: 5px;
+    font-size: 45px;
+    display: inline-block;
+}
+table{
+    background-color: rgba(255, 255, 255, 0);
+}
+td img{
+    width: 100px;
+    height: 80px;
+}
+.img_td{
+    padding: 7px 0 0 0;
+}
+.buttons{
+    padding: 0;
+}
+mat-paginator{
+    background-color: #d4d4d45e;
+}
+table{
+    background-color: #ffffff00;
+}
+.block{
+    background-color: #0000002e;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+}
+.form_block{
+    width: 40%;
+    margin: auto;
+    background-color: #232536;
+    padding: 20px;
+    border-radius: 17px
+}
+.mat-mdc-form-field{
+    display: block;
+    margin-bottom: 10px;
+}
+#form_btn{
+    margin-right: 10px;
+}
+button#form_btn:disabled{
+    color: rgb(87, 87, 87);
+}
+textarea#mat-input-4{
+    max-height: 50px;
+}
+button.add_butoon.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-unthemed.mat-mdc-button-base{
+    margin-left: 10px;
+}

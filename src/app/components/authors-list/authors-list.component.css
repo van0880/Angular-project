@@ -1,0 +1,103 @@
+.block_elem h4{
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #232536;
+}
+.block_elem p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6d6e76;
+    margin-bottom: 20px;
+}
+.img_div{
+    margin-bottom: 20px;
+}
+.img_div img{
+    cursor: pointer;
+}
+.soc_pages {
+    display: flex;
+    justify-content: space-evenly
+}
+.block_elem{
+    text-align: center;
+    padding: 36px;
+    background-color: #f4f4f4;
+    width: 23.1%;
+}
+.block_elem:hover{
+    background-color: #FBF6EA;
+}
+a img{
+    cursor: pointer;
+}
+a{
+    transition: 0.2s;
+    cursor: default;
+
+}
+a:hover{
+    transform: scale(1.3);
+}
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.img_div img{
+    transition: 0.2s;
+}
+.img_div img:hover{
+    /* transform: scale(1.2); */
+    transform: rotateZ(9deg) scale(1.2);
+}
+
+
+@media screen and (max-width: 1320px){
+    .block{
+        gap: 20px
+    }
+    .block_elem{
+        padding: 10px;
+    }
+    .block_elem h4{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 890px){
+    .block_elem{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 640px){
+    .img_div img{
+        width: 70%;
+    }
+    .block_elem h4{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .block_elem p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .img_div {
+        margin: 0;
+    }
+    .block{
+        gap: 5px
+    }
+    .block_elem{
+        width:49%
+    }
+}
+@media screen and (max-width: 440px){
+    .soc_pages img{
+        width: 13px;
+    }
+}

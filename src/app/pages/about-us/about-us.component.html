@@ -1,0 +1,74 @@
+<header>
+    <app-navbar></app-navbar>
+    <div class="container">
+        <div class="header_block">
+            <div class="header_text d-flex">
+                <div class="header_text_elem1">
+                    <h3>ABOUT US</h3>
+                    <h2>We are a team of content writers who share their learnings</h2>
+                </div>
+                <div class="header_text_elem2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                          Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="header_img">
+                <img class="d-block"src="assets/images/about_img/aboutUS.png" alt="image">
+            </div>
+        </div>
+        <div class="main_section">
+            <app-our-mision [block] = "ourList"></app-our-mision>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="main_block1">
+            <div class="d-flex block1_elem1">
+                <div class="block1_text">
+                    <h2>Our team of creatives</h2>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                         adipiscing elit, sed do eiusmod tempor 
+                         incididunt ut labore et dolore magna aliqua. 
+                         Ut enim ad minim veniam, quis nostrud exercitation 
+                         ullamco laboris nisi ut aliquip ex ea commodo 
+                         consequat. Duis aute irure dolor in reprehenderit in voluptate
+                         velit esse cillum dolore eu fugiat.</p>
+                </div>
+                <div class="block1_img">
+                    <img src="assets/images/about_img/img1.png" alt="image">
+                </div>
+            </div>
+            <div class="d-flex block1_elem2">
+                <div class="block1_img">
+                    <img src="assets/images/about_img/img2.png" alt="image">
+                </div>
+                <div  class="block1_text">
+                    <h2>Why we started this Blog</h2>
+                    <h5>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, 
+                        sed do eiusmod tempor incididunt.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor
+                         incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea 
+                        commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="authors_block">
+            <h3 class="title_h3">List Of Authors</h3>
+            <app-authors-list [list] = "authorsList" [socList] = "socialFoto" ></app-authors-list>
+        </div>
+        <app-join-block></app-join-block>
+    </div>
+</main>
+<footer>
+    <app-footer></app-footer>
+</footer>

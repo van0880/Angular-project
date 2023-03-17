@@ -1,0 +1,121 @@
+<header>
+    <app-navbar></app-navbar>
+    <div class="header_blur">
+        <div class="container">
+            <div class="header_title">
+                <p id="startup">Posted on <span>startup</span></p>
+                <h1>Step-by-step guide to choosing great font pairs</h1>
+                <p class="byName">By <a>James West</a> | May 23, 2022</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident.</p>
+                <a class="but_ReadMore in-block"type="button" [routerLink]="['/blog-post', 10]">Read More</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="main_block1 d-flex">
+            <div class="block1_elem1">
+                <h2>Featured Post</h2>
+                <app-featured-post [post]="feauteredPost"></app-featured-post>
+            </div>
+            <div class="block1_elem2">
+                <div class="title d-flex">
+                    <h2>All Posts</h2>
+                    <a routerLink="/blog">view all</a>
+                </div>
+                <app-posts-home [post]="allPosts"></app-posts-home>
+           
+            </div>
+        </div>
+        <div class="pattern">
+            <div id="yellow"></div>
+            <div id="purple"></div>
+        </div>
+        <div class="main_section">
+            <app-our-mision [block] = "ourMissionList"></app-our-mision>
+            <a routerLink="blog">Read More </a>
+        </div>
+        <div class="block_category">
+            <h3 class="title_h3">Choose A Category</h3>
+            <app-home-categories [element] = "categoryBlock" ></app-home-categories>
+        </div>
+        <div class="main_block2">
+            <div class="block2_img">
+                <img src="assets/images/home_img/main_3.png" alt="image">
+            </div>
+            <div class="block2_text">
+                <h5>Why we started </h5>
+                <h4>It started out as a simple idea and evolved into our passion</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                     magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <a class='but_ReadMore in-block' routerLink="/about" type="button">Discover Our story </a>
+            </div>
+        </div>
+        <div class="authors_block">
+            <h3 class="title_h3">List Of Authors</h3>
+            <app-authors-list [list] = "authorsList" [socList] = "socialFoto" ></app-authors-list>
+        </div>
+        <div class="main_logoBlock d-flex">
+            <div class="logoBlock_title">
+                <span>We are</span>
+                <h4>Featured in</h4>
+            </div>
+            <a href="#">
+                <img src="assets/images/home_img/mainlogo1.png" alt="logoipsum">
+            </a>
+            <a href="#">
+                <img src="assets/images/home_img/mainlogo2.png" alt="logoipsum">
+            </a>
+            <a href="#">
+                <img src="assets/images/home_img/mainlogo3.png" alt="logoipsum">
+            </a>
+            <a href="#">
+                <img src="assets/images/home_img/mainlogo4.png" alt="logoipsum">
+            </a>
+            <a href="#">
+                <img src="assets/images/home_img/mainlogo5.png" alt="logoipsum">
+            </a>
+        </div>
+        <div class="main_block4">
+            <div class="block4_elem1">
+                <h5>TESTIMONIALS</h5>
+                <h3>What people say about our blog</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div class="block4_elem2">
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua.</p>
+                <div class="d-flex block4_author">
+                    <div class="d-flex">
+                        <div>
+                            <img src="assets/images/home_img/block4profile.png" alt="profile photo">
+                        </div>
+                        <div>
+                            <h2>Jonathan Vallem</h2>
+                            <h3>New york, USA</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="arrow">
+                            &larr;
+                        </span>
+                        <span  class="arrow">
+                            &rarr;
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-join-block></app-join-block>
+    </div>
+</main>
+<footer>
+    <app-footer></app-footer>
+</footer>

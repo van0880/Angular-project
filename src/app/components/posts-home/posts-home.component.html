@@ -1,0 +1,8 @@
+<div id="block">
+    <a *ngFor="let item of posts" class="post" [routerLink]="['/blog-post', item.id]">
+        <h5> By <a routerLink="/author">{{item.name}}</a> {{item.date}}</h5>
+        <p>{{item.title}}</p>
+    </a>
+</div>
+
+               

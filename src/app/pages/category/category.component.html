@@ -1,0 +1,55 @@
+<header>
+    <app-navbar></app-navbar>
+    <div class="header_bg">
+        <div class="container">
+            <div class="header_block center">
+                <h1>Business</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <h5>Blog > Business</h5>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class= "d-flex main_block1">
+            <div class="block1_elem1">
+                <app-all-posts [block] = "allPosts"></app-all-posts>
+            </div>
+            <div class="block1_elem2">
+                <h3 class="title_h3">Categories</h3>
+                <app-category-block [element]= "categoryBlock"></app-category-block>
+                <h3 class="title_h3">All Tags</h3>
+                <div class="block_tags">
+                    <div class="d-flex blockTags_elem">
+                        <div>
+                           <p>Business</p>
+                        </div>
+                        <div>
+                            <p>Experience</p> 
+                        </div>
+                    </div>
+                    <div class="d-flex blockTags_elem">
+                        <div>
+                            <p>Screen</p> 
+                        </div>
+                        <div>
+                            <p>Technology</p> 
+                        </div>
+                    </div>
+                    <div class="d-flex blockTags_elem">
+                        <div>
+                            <p>Marketing</p> 
+                        </div>
+                        <div>
+                            <p>Life</p>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <app-footer></app-footer>
+</footer>

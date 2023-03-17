@@ -1,0 +1,15 @@
+
+<div class="d-flex posts_block">
+    <div *ngFor = "let item of block">
+        <div class="posts_elem">
+            <div class="posts_img">
+                <img src={{item.img}} alt="image">
+            </div>
+            <div class="posts_text">
+                <h5>By <a routerLink="/author">{{item.name}}</a>{{item.date}}</h5>
+                <h2>{{item.title}}</h2>
+                <p>{{item.text}}</p>
+            </div>
+        </div>
+    </div>    
+</div>

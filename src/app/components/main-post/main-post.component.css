@@ -1,0 +1,113 @@
+
+.header_title h5{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #232536;
+    letter-spacing: 3px;
+}
+.header_title h3{
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #232536;
+    margin: 20px 0 16px;
+}
+.header_title span{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4c4c4c
+}
+.header_title a{
+    font-weight: 500;
+    color: #592EA9;
+}
+.header_title p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+    margin: 16px 0 32px
+}
+.header_title{
+    padding-right: 140px;
+}
+.header_block{
+    padding: 80px 0;
+}
+@media screen and (max-width: 1150px){
+    .header_title {
+        padding-right: 20px;
+    }
+    .header_title h3{
+        font-size: 26px;
+        line-height: 32px;
+        margin: 10px 0;
+    }
+
+}
+@media screen and (max-width: 890px){
+    .header_image img{
+        width: 335px;
+    }
+    .header_title h3{
+        font-size: 24px;
+        line-height: 30px;
+        margin: 10px 0;
+    }
+    .header_title h5{
+        font-size: 14px;
+    }
+    .header_title p{
+        line-height: 23px;
+    }
+    .header_block{
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width: 640px){
+    .header_block{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding: 30px 0;
+    }
+   
+    .header_title{
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .header_image img{
+        width: 100%
+    }
+    .header_title h3{
+        line-height: 26px;
+    }
+    
+
+}
+@media screen and (max-width: 440px){
+    .header_title p{
+        font-size: 14px;
+    }
+    .header_title h3{
+        font-size: 20px;
+    }
+   
+}
+@media screen and (max-width: 360px){
+    .header_title h3{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .header_title span{
+        font-size: 12px;
+    }
+    .header_title{
+        margin: 0;
+    }
+}

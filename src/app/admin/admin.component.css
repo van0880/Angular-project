@@ -1,0 +1,83 @@
+.menu li a{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    transition: 0.3s;
+    width: 100%;
+    display: block;
+}
+
+li{
+    margin: 30px 0;
+    list-style: none;
+}
+.header_logo{
+    margin-bottom: 100px;
+}
+.menu{
+    background-color: #232536;
+    width: 18%;
+    height: 100vh;
+    padding: 20px 0px 0 20px;
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+}
+.menu .links a:hover:not(.active){
+    color: #f5deb37a;
+    border-bottom-left-radius: 17px;
+    border-top-left-radius: 17px;
+    transition: 0.3s;
+}
+.menu .links .active{
+    background-color: white;
+    color: #232536;
+    padding: 10px;
+    border-bottom-left-radius: 17px;
+    border-top-left-radius: 17px;
+    transition: 0.3s;
+}
+.links{
+    height: 70%;
+}
+.table_router{
+    width: 100%;
+    position: relative;
+}
+a.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-unthemed.mat-mdc-button-base {
+    transition: 0.3s;
+}
+a.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-unthemed.mat-mdc-button-base:hover {
+    background-color: #f5deb37a;
+}
+.logout_block{
+    background-color: #ababab;
+    padding: 20px;
+    border-radius: 12px;
+    width: 22%;
+    margin: auto;
+}
+.block{
+    padding-top: 10%;
+    position: absolute;
+    background-color: #000000b5;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.logout_block p {
+    color:black; 
+    margin-bottom: 30px;
+}
+button.logout_yes.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-unthemed.mat-mdc-button-base{
+    width: 100px;
+    color: rgb(0, 0, 149);
+}
+button.logout_no.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-unthemed.mat-mdc-button-base{
+    width: 100px;
+    color: rgb(158 0 0);
+}

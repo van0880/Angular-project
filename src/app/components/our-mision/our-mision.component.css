@@ -1,0 +1,122 @@
+.section_block h4{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    color: #232536;
+    margin-bottom: 24px;
+    letter-spacing: 3px;
+}
+.section_block h2{
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+    color: #232536;
+    margin: 26px 0 16px;
+    letter-spacing: -2px;
+}
+.section_block p{
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 16px 0;
+}
+.section_block {
+    gap: 82px;
+    
+}
+.section_block>div{
+    width:50%;
+    padding-right: 30px;
+}
+.section_block .section_elem3 h2{
+    font-size: 36px;
+}
+@media screen and (max-width: 1150px){
+    .section_block h2{
+        line-height: 38px;
+    }
+    .section_block{
+        gap: 70px;
+    }
+    .section_block .section_elem3 h2{
+        font-size: 32px;
+    }
+
+}
+@media screen and (max-width: 890px){
+    .section_block{
+        gap: 40px;
+    }
+    .section_block .section_elem3 h2{
+        font-size: 22px;
+    }
+    .section_block h2{
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0;
+    }
+    .section_block p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .section_block h4{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 640px){
+    .section_block>div{
+        width: 100%;
+        padding-right: 0;
+    }
+    .section_block .section_elem3 h2{
+        font-size: 18px;
+    }
+    .section_block h2{
+        font-size: 17px;
+
+    }
+    .section_block h4{
+        font-size: 13px;
+    }
+    .section_block{
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 25px;
+    }
+    .section_block h4{
+        margin: 0;
+    }
+    .section_block h2{
+        margin: 0;
+        line-height: 30px;
+    }
+    .section_block h2{
+        letter-spacing: 0;
+       }
+    
+}
+
+
+@media screen and (max-width: 360px){
+    .section_block h2{
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 20px;
+    }
+    .section_block .section_elem3 h2{
+        font-size: 16px;
+
+    }
+    .section_block h4{
+       border-bottom: 1px solid black;
+
+    }
+    .section_block p{
+        font-size: 13px;
+        margin: 10px 0;
+        line-height: 20px;
+    }
+}

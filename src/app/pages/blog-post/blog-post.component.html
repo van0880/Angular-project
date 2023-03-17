@@ -1,0 +1,82 @@
+<header>
+    <app-navbar></app-navbar>
+    <div class="container">
+        <div class="header_block">
+            <div class="header_author">
+                <div>
+                    <img src="assets/images/blogPost_img/author.png" alt="profile photo">
+                </div>
+                <div>
+                    <h4>Andrew Jonson</h4>
+                    <span>Posted on {{mainPost.date}}</span>
+                </div>
+            </div>
+            <div>
+                <h1>{{mainPost.title}}</h1>
+                <div>
+                    <img src="assets/images/blogPost_img/shuttle.png" alt="">
+                    <p>{{mainPost.category}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="main_block1">
+            <div>
+                <img src={{mainPost.img}} alt="photo">
+            </div>
+            <div class="block1_text">
+                <div class="block1_elem1">
+                    <h3>{{mainPost.title}}</h3>
+                    <p>{{mainPost.text}}</p>
+                </div>
+                <div class="block1_elem2">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                         incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                          Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. 
+                          Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo.
+                           Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. 
+                        Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. 
+                        Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo.
+                         Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Non blandit massa enim nec scelerisque</li>
+                        <li>Neque egestas congue quisque egestas</li>
+                    </ul>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                          Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. 
+                          At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. 
+                        Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. 
+                        Risus in hendrerit gravida rutrum quisque non.
+                    </p>
+                </div>
+                <div class="block1_elem3">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque
+                         viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque
+                          penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo.
+                         Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main_block2">
+            <h3 class="title_h3">What to read next</h3>
+            <div class="d-flex posts_block">
+                <app-blog-post-posts [block] = "allPosts"></app-blog-post-posts>
+            </div>  
+        </div>
+        <app-join-block></app-join-block>
+    </div>
+</main>
+<footer>
+    <app-footer></app-footer>
+</footer>

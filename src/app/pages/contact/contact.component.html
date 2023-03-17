@@ -1,0 +1,46 @@
+<header>
+    <app-navbar></app-navbar>
+</header>
+<main>
+    <div class="container">
+        <div class="main_block">
+            <div class="block1_text center">
+                <h4>Contact us</h4>
+                <h3 class="title_h3">Let’s Start a Conversation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            </div>
+            <div class="block1_form">
+                <div class="form_info d-flex">
+                    <div>
+                        <h5>Working hours</h5>
+                        <p>Monday To Friday</p>
+                        <p>9:00 AM to 8:00 PM </p>
+                        <h4>Our Support Team is available 24/7</h4>
+                    </div>
+                    <div>
+                        <h5>Contact Us</h5>
+                        <p>020 7993 2905</p>
+                        <h4>hello@finsweet.com</h4>
+                    </div>
+                </div>
+                <div>
+                    <form [formGroup]="form">
+                        <input type="text" formControlName="name" placeholder="Full Name">
+                        <input type="email" formControlName="email" placeholder="Your Email">
+                        <select formControlName="query" >
+                            <option value=""selected disabled >Query Related</option>
+                            <option value="" >????</option>
+                            <option value="" >????</option>
+                            <option value="" >????</option>
+                        </select>
+                        <textarea formControlName="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="button"class="but_ReadMore">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <app-footer></app-footer>
+</footer>

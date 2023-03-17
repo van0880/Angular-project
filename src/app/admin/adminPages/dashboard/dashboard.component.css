@@ -1,0 +1,55 @@
+.bg-color{
+    background-color: #191f543d;
+    height: 100vh;
+    padding-top: 10px;
+}
+h2{
+    font-size: 80px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+h1{
+    color: #232536ab;
+    letter-spacing: 5px;
+    font-size: 45px;
+}
+h5{
+    font-family: Inter;
+    font-size: 30px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.dashboards{
+    color: white;
+    padding: 25px 20px;
+    width: 30%;
+    transition: 0.2s;
+    box-shadow: 0 0 20px 0 black;
+
+    
+}
+.dashboards:hover{
+    box-shadow: 0 0 10px 0 black;
+    transform:scale(1.02);
+}
+.block{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.dashboards mat-icon{
+    font-size: 160px;
+    width: 100%;
+    height: 100%;
+    color: #00000066;
+}
+.authors{
+    background-color: #375568;
+}
+.categories{
+    background-color: #36232b;
+}
+.posts{
+    background-color: #232536;
+}

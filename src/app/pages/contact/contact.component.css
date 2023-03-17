@@ -1,0 +1,143 @@
+.block1_text h4{
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    color: #232536;
+}
+.block1_text h3{
+    margin: 12px 0 24px;
+}
+.block1_text p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+}
+.main_block{
+    padding: 128px 0;
+    width: 60%;
+    margin: auto;
+}
+.block1_text{
+    margin-bottom: 64px;
+}
+.form_info{
+    background-color: #592EA9;
+    padding: 48px 64px;
+    margin-bottom: 48px ;
+}
+.form_info>div{
+    width: 45%;
+}
+input::placeholder, textarea::placeholder{
+    font-family: Inter;
+    font-size: 16px;
+    color: #232536;
+}
+select{
+    font-family: Inter;
+    font-size: 16px;
+    color: #232536;
+}
+.form_info h5{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF60;
+    border-bottom: 1px solid #FFFFFF60;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+.form_info p{
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+}
+.form_info h4{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF60;
+}
+.block1_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form input, textarea, select{
+    padding: 20px;
+    outline: none;
+}
+form input, textarea{
+    cursor: auto;
+}
+input.ng-touched.ng-dirty.ng-invalid {
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 890px){
+    .main_block{
+        padding: 90px 0;
+        width: 88%;
+    }
+}
+@media screen and (max-width: 640px){
+    .main_block{
+        padding: 50px 0;
+        width: 100%;
+    }
+    .form_info p{
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .form_info{
+        padding: 20px 7px;
+    }
+    form input, textarea, select{
+        padding: 6px;
+    }
+    
+}
+@media screen and (max-width: 440px){
+    .block1_text h4{
+        line-height: 0;
+    }
+    .block1_text p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .block1_text{
+        margin-bottom: 30px;
+    }
+    .form_info h4{
+        font-size: 13px;
+    }
+    .form_info{
+        margin-bottom: 20px;
+    }
+    form textarea{
+        padding: 0 6px;
+    }
+}
+@media screen and (max-width: 360px){
+    .main_block {
+        padding: 30px 0;
+    }
+    .block1_text h3{
+        margin: 10px 0 0 ;
+    }
+    .form_info p {
+        font-size: 13px;
+    }
+}

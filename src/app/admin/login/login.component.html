@@ -1,0 +1,24 @@
+<div class="bg">
+    <h1>ADMIN</h1>
+   
+    <div class="form_block">
+        <div class="block_img">
+            <img src="assets/images/uuu.jpg"alt="Adminn">
+        </div>
+        <form  class="example-form" [formGroup]="form" (ngSubmit)="send()" >
+            <mat-form-field appearance="fill">
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="pat@example.com" formControlName="email" required>
+                <mat-error *ngIf="form.get('email')?.invalid">{{'You must enter a email'}}</mat-error>
+              </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label><mat-icon>lock</mat-icon>Password</mat-label>
+                <input matInput placeholder="password" type="password" formControlName="password">
+                <mat-error *ngIf="form.get('password')?.invalid">{{'You must enter a password'}}</mat-error>
+            </mat-form-field>
+            <button mat-raised-button [disabled]="form.invalid" color="">Log in <mat-icon>forward</mat-icon></button>
+        </form>
+    </div>
+</div>
+

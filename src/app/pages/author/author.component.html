@@ -1,0 +1,49 @@
+<header>
+    <app-navbar></app-navbar>
+    <div class="header_bg">
+        <div class="container">
+            <div class="header_block">
+                <div class="header_elem1 d-flex">
+                    <div class="header_img">
+                        <img src="assets/images/author_img/author.png" alt="">
+                    </div>
+                    <div class="header_text">
+                        <h1>Hey there, I’m Andrew Jonhson and welcome to my Blog</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+                        <div class="social_block">
+                            <a href="www.facebook.com">
+                                <img src="assets/images/author_img/face.png" alt="">
+                            </a>
+                            <a href="www.twitter.com">
+                                <img src="assets/images/author_img/twit.png" alt="">
+                            </a>
+                            <a href="www.instagram.com">
+                                <img src="assets/images/author_img/insta.png" alt="">
+                            </a>
+                            <a href="www.linkedin.com">
+                                <img src="assets/images/author_img/linked.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_elem2">
+                    <div class="pattern">
+                        <div id="yellow"></div>
+                        <div id="purple"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="all_posts">
+            <h3 class="title_h3">My Posts</h3>
+            <app-all-posts [block] = "allPosts"></app-all-posts>
+        </div>
+    </div>
+</main>
+<footer>
+    <app-footer></app-footer>
+</footer>
