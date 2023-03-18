@@ -28,6 +28,7 @@ export class BlogPostComponent {
     this.getPosts()
     this.activeRoute.params.subscribe(param =>{
       this.id = param['id']
+      console.log(param)
       this.getMainPost()
     })
   }

@@ -18,8 +18,6 @@ export class DashboardComponent {
 
   ngOnInit():void{
     this.getInfo()
-    // this.getCategories()
-    // this.getPosts()
   }
   getInfo() :void{
     this.request.getData<Authors []>(environment.authorList.get).subscribe((authors)=>{
@@ -33,16 +31,5 @@ export class DashboardComponent {
       this.posts = posts.length
     })
   }
-  // getCategories(){
-  //   this.request.getData<Category []>(environment.categorys.get).subscribe((element)=>{
-  //     this.categories = element.length 
-  //   })
-  // }
-  // getPosts(){
-  //   this.request.getData<Posts []>(environment.posts.get).subscribe((posts)=>{
-  //     this.posts = posts.length
-  //   })
-  // }
-
 
 }

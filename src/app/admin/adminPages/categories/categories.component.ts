@@ -38,7 +38,7 @@ export class CategoriesComponent implements AfterViewInit, OnInit{
     })
   }
   getCategories(){
-    this.request.getData<Category []>(environment.categorys.get).subscribe((element)=>{
+    this.request.getData<Category []>(environment.categorys.get).subscribe((element: Category[])=>{
       this.dataSource = new MatTableDataSource(element)
       this.dataSource.paginator = this.paginator
     })
@@ -49,7 +49,7 @@ export class CategoriesComponent implements AfterViewInit, OnInit{
 
   deleteCategory(id: number | string){
     if(confirm('Delete This Item?')== true){
-      this.request.deleteData(environment.categorys.get + `/${id}`).subscribe((element)=>{
+      this.request.deleteData(environment.categorys.get + `/${id}`).subscribe(()=>{
         this.getCategories()
       })
     }
@@ -68,11 +68,11 @@ export class CategoriesComponent implements AfterViewInit, OnInit{
   save_btn(){
     let obj = this.formCategories.value
     if(this.form_btn == "edit"){
-      this.request.putData<Category[]>(environment.categorys.get + `/${this.idCategory}`, obj).subscribe((element)=>{
+      this.request.putData<Category[]>(environment.categorys.get + `/${this.idCategory}`, obj).subscribe(()=>{
         this.getCategories()
       })
     }else if(this.form_btn == "add"){
-      this.request.postData<Category[]>(environment.categorys.get, obj).subscribe((element)=>{
+      this.request.postData<Category[]>(environment.categorys.get, obj).subscribe(()=>{
         this.getCategories()
       })
     }
@@ -80,11 +80,7 @@ export class CategoriesComponent implements AfterViewInit, OnInit{
   }
 
   addCategory(){
-    this.formCategories.patchValue({
-      name: "",
-      text: "",
-      img: ""
-    })
+    this.formCategories.reset()
     this.display = !this.display
     this.form_btn = "add"
    }

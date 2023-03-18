@@ -23,15 +23,14 @@ export class AuthorsComponent implements AfterViewInit, OnInit{
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   formAuthors: FormGroup = new FormGroup({})
-  display: boolean = false
-  form_btn: string = ""
+  display: boolean = false;
+  form_btn: string = "";
   idAuthor: number | string = 0
-  searchInp = document.getElementById('search') as HTMLElement
   constructor(private request: RequestService, public fb: FormBuilder){}
   
   
   ngOnInit():void{
-    this.setAuthorList()
+    this.getAuthorList()
  
     this.formAuthors = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(14)]],
@@ -44,8 +43,8 @@ export class AuthorsComponent implements AfterViewInit, OnInit{
   ngAfterViewInit() :void{
     this.dataSource.paginator = this.paginator;
   }
-  setAuthorList() :void{
-    this.request.getData<Authors []>(environment.authorList.get).subscribe((authors)=>{
+  getAuthorList() :void{
+    this.request.getData<Authors []>(environment.authorList.get).subscribe((authors: Authors[])=>{
       this.dataSource = new MatTableDataSource(authors)
       this.dataSource.paginator = this.paginator
     })
@@ -53,8 +52,8 @@ export class AuthorsComponent implements AfterViewInit, OnInit{
 
   deleteAuthor(id: number | string):void{
     if(confirm('Delete This Item')){
-      this.request.deleteData(environment.authorList.get + `/${id}`).subscribe((authors)=>{
-        this.setAuthorList()
+      this.request.deleteData(environment.authorList.get + `/${id}`).subscribe(()=>{
+        this.getAuthorList()
       })
     } 
   }
@@ -74,25 +73,21 @@ export class AuthorsComponent implements AfterViewInit, OnInit{
   save_btn():void{
     let obj = this.formAuthors.value
     if(this.form_btn == "edit"){
-      this.request.putData<Authors[]>(environment.authorList.get + `/${this.idAuthor}`, obj).subscribe((authors)=>{
-        this.setAuthorList()
+      this.request.putData<Authors[]>(environment.authorList.get + `/${this.idAuthor}`, obj).subscribe(()=>{
+        this.getAuthorList()
       })
     }else if(this.form_btn == "add"){
-      this.request.postData<Authors[]>(environment.authorList.get, obj).subscribe((authors)=>{
-        this.setAuthorList()
+      this.request.postData<Authors[]>(environment.authorList.get, obj).subscribe(()=>{
+        this.getAuthorList()
       })
     }
     this.display = !this.display
   }
  
   addAuthor():void{
-    this.formAuthors.patchValue({
-      name: "",
-      descriptions: "",
-      img: ""
-    })
-  this.display = !this.display
-  this.form_btn = "add"
+    this.formAuthors.reset()
+    this.display = !this.display
+    this.form_btn = "add"
  }
 
 }

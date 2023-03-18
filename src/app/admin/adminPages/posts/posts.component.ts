@@ -44,15 +44,15 @@ export class PostsComponent {
     this.dataSource.paginator = this.paginator;
   }
   getPosts() :void{
-    this.request.getData<Posts []>(environment.posts.get).subscribe((posts)=>{
+    this.request.getData<Posts []>(environment.posts.get).subscribe((posts: Posts[])=>{
       this.dataSource = new MatTableDataSource(posts)
       this.dataSource.paginator = this.paginator
     })
   }
 
-  deletePost(id: number | string){
+  deletePost(id: number | string): void{
     if(confirm('Delete This Item?')== true){
-      this.request.deleteData(environment.posts.get + `/${id}`).subscribe((element)=>{
+      this.request.deleteData(environment.posts.get + `/${id}`).subscribe(()=>{
         this.getPosts()
       })
     }
@@ -71,14 +71,14 @@ export class PostsComponent {
     this.idPost = element.id
     this.form_btn = "edit"
   }
-  save_btn(){
+  save_btn(): void{
     let obj = this.formPosts.value
     if(this.form_btn == "edit"){
-      this.request.putData<Posts[]>(environment.posts.get + `/${this.idPost}`, obj).subscribe((element)=>{
+      this.request.putData<Posts[]>(environment.posts.get + `/${this.idPost}`, obj).subscribe(()=>{
         this.getPosts()
       })
     }else if(this.form_btn == "add"){
-      this.request.postData<Posts[]>(environment.posts.get, obj).subscribe((element)=>{
+      this.request.postData<Posts[]>(environment.posts.get, obj).subscribe(()=>{
         this.getPosts()
       })
     }
@@ -86,24 +86,9 @@ export class PostsComponent {
   }
 
   addPost(){
- 
-    this.formPosts.patchValue({
-      category: "",
-      name: "",
-      date:"",
-      title: "",
-      text: "",
-      img: ""
-    })
+    this.formPosts.reset()
     this.display = !this.display
     this.form_btn = "add"
    }
 
-   search():void{
-    let search = document.getElementById('search') as HTMLInputElement
-    this.request.getData<Posts []>(environment.posts.get + `?q=${search.value}`).subscribe((posts)=>{
-      this.dataSource = new MatTableDataSource(posts)
-      this.dataSource.paginator = this.paginator
-    })
-   }
 }
